@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES Modules</title>
+    <script async src="https://unpkg.com/es-module-shims@0.12.2/dist/es-module-shims.js"></script>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "logger": "./js/logger.js",
+            "loggerV2": "./js/loggerV2.js",
+            "displayMessage": "./js/displayMessage.js"
+          }
+        }
+    </script>
+</head>
+<body>
+
+<h1>ES Modules</h1>
+
+<pre id="log">
+</pre>
+
+
+<script src="./js/index.js" type="module"></script>
+</body>
+</html>
